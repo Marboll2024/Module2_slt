@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif; /* Optional: Set your preferred font-family */
+}
+
+header {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    box-sizing: border-box;
+    width: 100%; /* Default to full width */
+
+    /* Desktop View */
+    @media (min-width: 992px) {
+        width: 33.33%; /* Equal width for all sections */
+        float: left;
+    }
+
+    /* Tablet View */
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 50%; /* 2 sections in the first row */
+        float: left;
+    }
+
+    /* Mobile View */
+    @media (max-width: 767px) {
+        width: 100%; /* Full width for each section in mobile view */
+    }
+
+    /* Common Styling */
+    border: 1px solid black;
+    margin: 10px; /* Adjust spacing between sections */
+}
+
+.title {
+    position: relative;
+    text-align: right;
+    
+    border-bottom: 1px solid black;
+
+    /* Optional: Adjust font size */
+    font-size: 125%; /* 25% larger than dummy text */
+}
+
+/* Optional: Adjust font size */
+h1 {
+    font-size: 125%; /* 75% larger than dummy text */
+}
